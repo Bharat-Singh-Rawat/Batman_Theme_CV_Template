@@ -206,6 +206,7 @@
             body, html, .btn-lab, #intro-overlay button, .joker-trigger { cursor: auto !important; }
         }
     </style>
+    <script src="/Dossier/profile.js"></script>
 </head>
 <body>
 
@@ -243,81 +244,53 @@
 
     <div class="container">
         
-        <section class="card base-target">
-            <span style="color:var(--bat-yellow); font-weight:bold; letter-spacing:5px; font-family: 'VT323';">[ CLASSIFIED DOCUMENTS]</span>
-            <h1>BHARAT SINGH RAWAT, Ph.D.</h1>
-            <h3 style="color: #888; margin-top: 15px; font-size: 2rem; font-family: 'VT323';">// ION SOURCE & BEAM DIAGNOSTICS EXPERT</h3>
-            <p style="color:#ccc; font-size: 1.4rem; margin-top: 25px;">Expert in manipulating charged particle beams with 7+ years of experience in ion sources, beam extraction/transport systems and digital twins.</p>
-            <div style="margin-top: 40px; display: flex; flex-wrap: wrap; gap: 15px;">
-                <a href="https://bharat26031992.github.io/AEgIS_Outreach_Game/" target="_blank" class="btn-lab" style="text-align: center;">OP: DIGITAL TWIN GAME</a>
-                <a href="https://bharat26031992.github.io/Project-Hbar/" target="_blank" class="btn-lab" style="border-color: red; color: red; text-align: center;">OP: PROJECT HBAR</a>
-            </div>
-        </section>
+        <!-- CONTENT COMES FROM /Dossier/profile.js (edit that file, not this page) -->
+        <section class="card base-target" id="cv-hero"></section>
 
         <h2 class="m-title">I. SERVICE RECORD</h2>
-        <div class="card j-style">
-            <span class="sub-role" style="font-family: 'Special Elite'; font-size: 1.2rem;">Research Associate | University of Liverpool / Cockcroft Institute / CERN</span>
-            <span class="date-tag" style="font-family: 'Special Elite';">2023 — 2026</span>
-            <ul class="joker-list">
-                <li>Led ballistic antiproton transport optimization utilizing 3D CST Penning Trap models.</li>
-                <li>Creating a Digital Twin of the Penning Malmberg trap apparatus, integrating first principles physics with Machine Learning (ML) models to predict trap behavior and optimize particle confinement.</li>
-                <li>Executing critical on-shift responsibilities during beam time, including real-time data acquisition and the management of cryogenic systems for superconducting magnets.</li>
-            </ul>
-
-            <span class="sub-role" style="font-family: 'Special Elite'; font-size: 1.2rem; margin-top: 40px;">Radiation Protection Engineer | Nuvia India Pvt Limited</span>
-            <span class="date-tag" style="font-family: 'Special Elite';">2018 — 2018</span>
-            <ul class="joker-list">
-                <li>Managed occupational radiation exposure at Kakrapar Atomic Power Station.</li>
-                <li>Developed automated dose tracking systems for proactive safety interventions.</li>
-                <li>Coordinated with the Health Physics and Reactor Management teams to provide real-time notification of dose status.</li>
-            </ul>
-        </div>
+        <div class="card j-style" id="cv-exp"></div>
 
         <h2 class="m-title" style="background: var(--riddler-green);">II. SCIENTIFIC CLEARANCE</h2>
-        <div class="card r-style">
-            <span class="sub-role">Ph.D. | Homi Bhabha National Institute / Institute for Plasma Research</span>
-            <span class="date-tag">2018 — 2024</span>
-            <ul class="riddler-list">
-                <li>Designed a ring cusp ion source for $\text{Ar}^+$ beams ($1$ to $2\text{ keV}$, $100\text{ mA}$).</li>
-                <li>Utilized CST Studio for magnetic cusp optimization and OPERA-3D for ion optics design, achieving a low beam divergence of $\sim 6.5^\circ$.</li>
-                <li>Conducted transient thermo-structural analysis in ANSYS to design a grid mounting system that limited thermal deformation to $< 0.1\text{ mm}$.</li>
-                <li>Engineered a nine-channel Parallel Wire Array (PWA) and a Faraday Cup array (FCA) for real-time monitoring of ion beam profiles.</li>
-            </ul>
-
-            <span class="sub-role" style="margin-top: 40px;">M.Tech. Nuclear Engineering | Pandit Deendayal Petroleum University</span>
-            <span class="date-tag">2015 — 2017</span>
-            <ul class="riddler-list">
-                <li>Developed a $10\text{ kW}$ Faraday cup capable of measuring $20$ to $30\text{ mA}$ beam intensities.</li>
-                <li>Designed cooling systems maintaining copper Faraday Cup at $350.6^\circ\text{C}$ for thermal integrity.</li>
-                <li>Calculated suppression voltages ($-450\text{V}$ to $-500\text{V}$) via SIMION 8.0 and LORENTZ.</li>
-            </ul>
-        </div>
+        <div class="card r-style" id="cv-edu"></div>
 
         <h2 class="m-title" style="background: var(--freeze-blue); color: #000;">III. RESTRICTED ARCHIVES (PUBLICATIONS)</h2>
-        <div class="card a-style">
-            <ul class="freeze-list">
-                <li>Instruments (2026): Characterization of the extraction system of supersonic gas curtain-based ionization profile monitor for flash proton therapy.</li>
-                <li>IBIC (2025): Design studies of a Retarding Potential Energy Analyser (RPEA) for low energy antimatter experiments.</li>
-                <li>Instruments (2025): Faraday cups: principles, designs, and applications across scientific disciplines—a review.</li>
-                <li>EXA-LEAP (2025): 3D simulation studies of mixed plasma confinement at AEgIS.</li>
-                <li>Phys. Rev. Lett. (2024): Positronium Laser Cooling via the $1^3\text{S-}2^3\text{P}$ Transition with a Broadband Laser Pulse.</li>
-                <li>IPAC (2024): Simulation studies for the confinement of antiprotons for the AEgIS experiment.</li>
-                <li>IEEE TPS (2023): Experimental Studies on the Roles of Space Charge Neutralization in a Ring Cusp Ion Source.</li>
-                <li>AIP Advances (2022): Measurement system for ion beam profiles using fixed parallel wires and Faraday cup array.</li>
-                <li>IEEE TPS (2021): Characterization of a Multicusp Ion Source with Two-Grid Extraction System.</li>
-                <li>ICONE25 (2017): Design and simulation of $10\text{ kW}$ Faraday cup for ion beam current.</li>
-            </ul>
-        </div>
+        <div class="card a-style"><ul class="freeze-list" id="cv-pubs"></ul></div>
 
-        <h2 class="m-title" style="background: var(--ivy-green);">IV. SUBJECT INTEL</h2>
-        <div class="card i-style">
-            <p class="ivy-target" style="font-family: 'Special Elite', monospace; color: #fff; padding: 10px;"><strong>SOFTWARE STACK:</strong> CST Studio, OPERA3D, SIMION, COMSOL, RF Track, ANSYS, ASTRA, MAD-X, Geant4, IBISIMU.</p>
-            <div style="display:flex; gap: 20px; flex-wrap: wrap; margin-top: 30px;">
-                <div class="ivy-target" style="padding: 15px; border: 1px solid var(--ivy-green); background: rgba(0,255,100,0.05);">♟ CHESS: 1900 ELO (EXPERT)</div>
-                <div class="ivy-target" style="padding: 15px; border: 1px solid var(--ivy-green); background: rgba(0,255,100,0.05);">🌍 5 LANGUAGES (ES, EN, GU, RU, HI)</div>
-                <div class="ivy-target" style="padding: 15px; border: 1px solid var(--ivy-green); background: rgba(0,255,100,0.05);">🎵 KEYTAR & GUITAR</div>
-            </div>
-        </div>
+        <h2 class="m-title" style="background: var(--freeze-blue); color: #000;">IV. INTERCEPTED TRANSMISSIONS (TALKS)</h2>
+        <div class="card a-style"><ul class="freeze-list" id="cv-talks"></ul></div>
+
+        <h2 class="m-title" style="background: var(--ivy-green);">V. SUBJECT INTEL</h2>
+        <div class="card i-style" id="cv-intel"></div>
+
+        <script>
+        (function () {
+            const P = window.PROFILE, $ = id => document.getElementById(id);
+            $('cv-hero').innerHTML = `
+                <span style="color:var(--bat-yellow); font-weight:bold; letter-spacing:5px; font-family: 'VT323';">[ CLASSIFIED DOCUMENTS]</span>
+                <h1>${P.name}</h1>
+                <h3 style="color: #888; margin-top: 15px; font-size: 2rem; font-family: 'VT323';">// ${P.title}</h3>
+                <p style="color:#ccc; font-size: 1.4rem; margin-top: 25px;">${P.summary}</p>
+                <div style="margin-top: 40px; display: flex; flex-wrap: wrap; gap: 15px;">
+                    ${cvMap(P.links, (l, i) => `<a href="${l.url}" target="_blank" class="btn-lab" style="text-align: center;${i % 2 ? ' border-color: red; color: red;' : ''}">OP: ${l.label}</a>`)}
+                </div>`;
+            $('cv-exp').innerHTML = cvMap(P.experience, (e, i) => `
+                <span class="sub-role" style="font-family: 'Special Elite'; font-size: 1.2rem;${i ? ' margin-top: 40px;' : ''}">${e.role} | ${e.org}</span>
+                <span class="date-tag" style="font-family: 'Special Elite';">${e.dates}</span>
+                <ul class="joker-list">${cvMap(e.bullets, b => `<li>${b}</li>`)}</ul>`);
+            $('cv-edu').innerHTML = cvMap(P.education, (e, i) => `
+                <span class="sub-role"${i ? ' style="margin-top: 40px;"' : ''}>${e.role} | ${e.org}</span>
+                <span class="date-tag">${e.dates}</span>
+                <ul class="riddler-list">${cvMap(e.bullets, b => `<li>${b}</li>`)}</ul>`);
+            $('cv-pubs').innerHTML = cvMap(P.publications, p => `<li>${p.venue}: ${p.title}</li>`);
+            $('cv-talks').innerHTML = cvMap(P.talks, t => `<li>${t.type}: ${t.text}</li>`);
+            $('cv-intel').innerHTML =
+                cvMap(P.skills, s => `<p class="ivy-target" style="font-family: 'Special Elite', monospace; color: #fff; padding: 10px;"><strong style="text-transform:uppercase;">${s.label}:</strong> ${s.text}</p>`)
+                + `<p class="ivy-target" style="font-family: 'Special Elite', monospace; color: #fff; padding: 10px;"><strong>CORE EXPERTISE:</strong> ${P.expertise}</p>`
+                + `<div style="display:flex; gap: 20px; flex-wrap: wrap; margin-top: 30px;">`
+                + cvMap(P.hobbies, h => `<div class="ivy-target" style="padding: 15px; border: 1px solid var(--ivy-green); background: rgba(0,255,100,0.05);">${h.icon} ${h.name}: ${h.detail}</div>`)
+                + `</div>`;
+        })();
+        </script>
     </div>
 
     <div id="loop-msg">HAHAHAHA! THE SHOW MUST GO ON!</div>
@@ -604,4 +577,4 @@
         }
     </script>
 </body>
-</html>
+</html>
